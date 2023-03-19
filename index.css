@@ -1,3 +1,31 @@
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Courier+Prime&family=Montserrat&family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap');
+
+body {
+    background: black;
+}
+
+* {
+    color: white;
+    font-family: "Space Mono", 'Courier New', Courier, monospace
+}
+
+#cards {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid white;
+    display: inline-flex;
+    overflow-x: scroll;
+}
+
+.card {
+    width: 20rem;
+    height: 20rem%;
+}
+
+.white-b {
+    background: white;
+}
+
+.blue-b {
+    background: blue;
 }
