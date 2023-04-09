@@ -1,20 +1,23 @@
+const menuObj=document.getElementById("menu"); // Cache the main and menu objects
+const mainObj=document.getElementById("main");
 
-function toggle_menu(){
+function toggle_menu(){ // For the open and close button
     menuShowing=!menuShowing;
     if (menuShowing) {
-        document.getElementById("menu").style.width="100%";
-        document.getElementById("main").style.marginLeft="50vw";
+        menuObj.style.width="100%";
+        mainObj.style.marginLeft="50vw";
     } else {
-        document.getElementById("menu").style.width="0";
-        document.getElementById("main").style.marginLeft="20px";
+        menuObj.style.width="0";
+        mainObj.style.marginLeft="20px";
     }
 }
 
 var menuShowing = true;
 toggle_menu();
+
 // Infinite scroll for menu
-var menu = document.querySelector(".menu");
-var items = document.querySelectorAll(".menu-item");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".menu .menu-item");
 var clones = [];
 var disableScroll = false;
 var scrollHeight = 0;
@@ -58,24 +61,42 @@ function scrollUpdate(){
         }
 }}
 
-function onLoad(){
-    items.forEach(item => {
-        let clone = item.cloneNode(true);
-        menu.appendChild(clone);
+function debounce(func, timeout = 300){
+    let timer;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+}
+
+function onLoad() {
+    const fragment = document.createDocumentFragment(); // use a document fragment for appending clones
+    items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        fragment.appendChild(clone);
         clone.classList.add("js-clone");
-    })
+    });
+
+    menu.appendChild(fragment); // append the fragment to the DOM in one operation
 
     clones = menu.querySelectorAll(".js-clone");
 
     reCalc();
-
-    menu.addEventListener('scroll', () => {
-        window.requestAnimationFrame(scrollUpdate);
-    }, false);
-
-    window.addEventListener('resize', () => {
-        window.requestAnimationFrame(reCalc);
-    },false);
+    
+    // debounce the events
+    menu.addEventListener(
+        "scroll",
+        debounce(() => {
+            window.requestAnimationFrame(scrollUpdate);
+        }, 10)
+    );
+    
+    window.addEventListener(
+        "resize",
+        debounce(() => {
+            window.requestAnimationFrame(reCalc);
+        }, 10)
+    );
 }
 
 window.onload = onLoad()

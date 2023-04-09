@@ -62,7 +62,7 @@ h3 {
     background: rgb(11, 11, 11);
 }
 
-.menu-item {
+.menu .menu-item {
     position: relative;
     height: 25vh;
     filter: blur(2px);
