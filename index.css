@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Courier+Prime&family=Montserrat&family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap');
 
+/*IMPORTANT: COPY AND USE https://autoprefixer.github.io AND SAVE TO style.css*/
+
 html, body {
     background: rgb(25,25,25);
     background: linear-gradient(126deg, rgba(25,25,25,1) 0%, rgba(28,28,28,1) 28%, rgba(15,15,15,1) 56%, rgba(0,0,0,1) 100%);
