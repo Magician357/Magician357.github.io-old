@@ -1,0 +1,23 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <title>Profile</title>
+
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <ellipse stroke="null" stroke-width="10" ry="80" rx="80" id="svg_1" cy="183.55903" cx="250" fill="#444444"/>
+  <path stroke="null" id="svg_3" d="m136.00002,399l227.99998,0l0,219l-227.99998,0l0,-219z" opacity="undefined" stroke-width="10" fill="#000000"/>
+  <path stroke="null" id="svg_2" d="m250.00001,488.05902c-62.98342,0 -114,-36.69614 -114,-82.00001c0,-45.30387 51.01657,-82.00001 114,-82.00001c62.98342,0 114,36.69614 114,82.00001c0,45.30387 -51.01657,82.00001 -114,82.00001z" opacity="undefined" stroke-width="10" fill="#000000"/>
+  <path id="svg_27" d="m191.5,334.91812l58.5,80.99998l58.5,-80.99998l-117.00001,0z" stroke-width="10" fill="#ffffff"/>
+  <rect stroke="#000000" id="svg_5" height="9" width="184" y="138.55903" x="158" stroke-width="10" fill="#000000"/>
+  <rect id="svg_22" height="122" width="132" y="16.55903" x="184" stroke-width="10" stroke="#000000" fill="#000000"/>
+  <path stroke="null" id="svg_31" d="m242,363.07437l8,137l8,-137l-16,0z" stroke-width="10" fill="#141414"/>
+  <ellipse stroke="#000000" ry="12.5" rx="57.5" id="svg_28" cy="336.05904" cx="250" fill="#444444"/>
+  <path stroke="null" id="svg_30" d="m235.5,363.64437l14.5,-15.00002l14.5,15.00002l-29,0z" stroke-width="10" fill="#141414"/>
+  <path stroke="null" id="svg_32" d="m197.81496,411.84433l28.49999,-22l28.49999,22l-56.99998,0z" stroke-width="10" fill="#000000"/>
+  <path stroke="null" id="svg_34" d="m245.81496,411.84433l28.49999,-22l28.49999,22l-56.99998,0z" stroke-width="10" fill="#000000"/>
+  <rect id="svg_35" height="87" width="58" y="411.55903" x="227.78388" stroke-width="10" stroke="null" fill="#000000"/>
+  <rect id="svg_41" height="102" width="5" y="406.55903" x="247.5" stroke-width="10" stroke="null" fill="#0a0a0a"/>
+  <ellipse ry="5" rx="5" id="svg_37" cy="416.55903" cx="249.99999" stroke-width="10" stroke="null" fill="#ffffff"/>
+  <ellipse ry="5" rx="5" id="svg_38" cy="467.55903" cx="250" stroke-width="10" stroke="null" fill="#ffffff"/>
+  <ellipse ry="5" rx="5" id="svg_39" cy="518.55903" cx="251.99999" stroke-width="10" stroke="null" fill="#ffffff"/>
+ </g>
+</svg>
