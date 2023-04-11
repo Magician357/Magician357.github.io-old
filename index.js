@@ -16,6 +16,7 @@ var menuShowing = true;
 toggle_menu();
 
 // Infinite scroll for menu
+// Thanks to https://youtu.be/6qf3_KAAVQA
 const menu = document.querySelector(".menu");
 const items = document.querySelectorAll(".menu .menu-item");
 var clones = [];
@@ -102,6 +103,7 @@ function onLoad() {
 window.onload = onLoad()
 
 // Cool on scroll animations
+// Special thanks to Fireship (https://youtu.be/T33NN_pPeNI)
 const hiddenElements = document.querySelectorAll('.hidden')
 
 const observer = new IntersectionObserver((entries) => {
