@@ -2,6 +2,6 @@
 
 My website/portfolio
 
-This will be updated in the near future
+**THIS IS MY OLD WEBSITE. PLEASE REFER TO MY NEWER ONE**
 
 [View it here](https://magician357.github.io "magician357.github.io")
